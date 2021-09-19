@@ -1,0 +1,298 @@
+/* nav bar */
+
+* {
+  --col1: rgb(242, 1, 91);
+  --col2: rgb(243, 1, 179);
+  --col3: rgb(237, 2, 241);
+  --col4: rgb(121, 5, 242);
+  --col5: rgb(4, 3, 141);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+/* body style */
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 99vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--col4),
+    var(--col5),
+    var(--col4),
+    var(--col5)
+  );
+  overflow-y: scroll;
+
+  font-family: "mulish", sans-serif;
+  height: auto;
+}
+nav {
+  display: flex;
+}
+.filler {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+nav .logo {
+  margin-top: 0;
+  margin-right: 0;
+}
+nav div {
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+#logo_img {
+  width: 90px;
+  height: 90px;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#music {
+  color: var(--col1);
+}
+/* search logo */
+.search {
+  margin-top: 2%;
+  margin-right: 2%;
+  position: relative;
+}
+/* input */
+input[type="search"] {
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 20vw;
+  background-color: var(--col4);
+  background-position: 10px 10px;
+}
+input[type="search"]:focus {
+  border: 1px rgb(15, 109, 185) solid;
+  background-color: var(--col3);
+  outline: 0;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+.search i {
+  position: absolute;
+  top: 3px;
+  left: 18px;
+}
+
+.search i,
+.bell i {
+  color: white;
+  margin-top: 12px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid skyblue;
+  border-radius: 25%;
+}
+
+/* Body */
+
+/* 1. main */
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+}
+main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.row {
+  display: flex;
+  text-align: center;
+  flex: 1;
+  justify-content: space-evenly;
+  margin-bottom: 1%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.white {
+  color: white;
+}
+.heading {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  font-size: xx-large;
+}
+
+.song {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.i {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.song img {
+  margin: 2px;
+  width: 70%;
+}
+.time {
+  font-weight: lighter;
+  font-size: smaller;
+  margin-right: 5%;
+}
+.name h3 {
+  font-size: large;
+  align-self: flex-start;
+}
+.name h5 {
+  font-size: small;
+  align-self: flex-start;
+}
+.heading main .music-top {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .music-top img {
+  width: 70%;
+}
+
+/* artist section */
+.row .artist img {
+  border-radius: 50%;
+}
+.artist {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:focus > .optionbox {
+  display: inline;
+}
+
+.queue {
+  display: flex;
+  justify-content: space-around;
+}
+/* aside */
+aside {
+  width: 25%;
+  color: white;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+table td {
+  width: 5%;
+}
+li {
+  text-align: center;
+}
+.fa-heart:hover {
+  color: Red;
+}
+
+.s_name {
+  font-weight: bolder;
+  font-size: large;
+  width: 120%;
+}
+.a_name {
+  font-size: small;
+  font-weight: bolder;
+  color: wheat;
+  font-style: italic;
+}
+td {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 10px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: auto;
+  opacity: 0;
+}
+.card {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.overlay:hover {
+  opacity: 60%;
+  transition: 0.15s ease-in;
+}
+.space {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.party {
+  display: FLEX;
+  flex-basis: 30%;
+  justify-content: space-around;
+}
+.party img {
+  width: 80%;
+}
+.party div img:hover {
+  margin: 5%;
+  opacity: 0.4;
+  height: auto;
+  z-index: 10;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+h5 {
+  color: var(--col1);
+}
+.english-artist img {
+  width: 50%;
+}
+/* for artist page */
+h5 {
+  color: var(--col1);
+}
+#art {
+  width: 25%;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+artist:hover {
+  color: var(--col1);
+}

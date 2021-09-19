@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets\images\PMTfavicon.gif"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Soul Music player</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="logo">
+        <a href="#"
+          ><img id="logo_img" src="assets/images/PMT (2).svg" alt="logo" />
+          <h2 id="name" style="display: inline; position: absolute">
+            <span id="soul"> SOUL</span><br />
+            <span id="music"> music</span>
+          </h2></a
+        >
+      </div>
+      <div class="filler"></div>
+      <div class="search">
+        <form action="get">
+          <div class="input-icons">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="search"
+            />
+            <label for="submit"
+              ><i class="fa fa-search icon" aria-hidden="true"></i
+            ></label>
+          </div>
+          <input
+            type="submit"
+            id="submit"
+            value="submit"
+            style="display: none"
+          />
+        </form>
+      </div>
+      <div
+        class="
+          bell
+          animate__animated animate__shakeX animate__infinite animate__slow
+        "
+      >
+        <a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+      </div>
+      <div class="user">
+        <img src="assets/images/user.jpg" alt="user" />
+      </div>
+    </nav>
+    <!-- main content -->
+    <div class="main">
+      <main>
+        <!-- top -->
+        <div class="row">
+          <div class="music-top animate__animated animate__zoomIn">
+            <img src="assets/images/Latin-Club.jpg" alt="latin club" />
+          </div>
+          <div class="music-top animate__animated animate__zoomIn">
+            <img
+              src="assets/images/Mood-Booster.jpg"
+              alt="mood booster songs"
+            />
+          </div>
+          <div class="music-top animate__animated animate__zoomIn">
+            <img src="assets/images/EDM.jpg" alt="edm songs" />
+          </div>
+        </div>
+        <!-- latest release -->
+        <div class="white heading">Latest Release</div>
+        <div class="row wrap">
+          <!-- music card -->
+          <div class="song">
+            <div class="image">
+              <img src="assets/images/headphone.jpg" alt="song" />
+            </div>
+            <div class="name">
+              <h3 class="white">Onism</h3>
+              <h5 class="white">AUG 11,2017</h5>
+            </div>
+            <div class="i">
+              <input type="checkbox" id="option" />
+              <label for="option"
+                ><i class="fa fa-ellipsis-h white" aria-hidden="true"></i
+              ></label>
+            </div>
+            <div class="white time">4:44</div>
+          </div>
+          <div class="song">
+            <div class="image">
+              <img src="assets/images/headphone.jpg" alt="song" />
+            </div>
+            <div class="name">
+              <h3 class="white">Onism</h3>
+              <h5 class="white">AUG 11,2017</h5>
+            </div>
+            <div class="i">
+              <input type="checkbox" id="option" />
+              <label for="option"
+                ><i class="fa fa-ellipsis-h white" aria-hidden="true"></i
+              ></label>
+            </div>
+            <div class="white time">4:44</div>
+          </div>
+          <div class="song">
+            <div class="image">
+              <img src="assets/images/headphone.jpg" alt="song" />
+            </div>
+            <div class="name">
+              <h3 class="white">Onism</h3>
+              <h5 class="white">AUG 11,2017</h5>
+            </div>
+            <div class="i">
+              <input type="checkbox" id="option" />
+              <label for="option"
+                ><i class="fa fa-ellipsis-h white" aria-hidden="true"></i
+              ></label>
+            </div>
+            <div class="white time">4:44</div>
+          </div>
+          <div class="song">
+            <div class="image">
+              <img src="assets/images/headphone.jpg" alt="song" />
+            </div>
+            <div class="name">
+              <h3 class="white">Onism</h3>
+              <h5 class="white">AUG 11,2017</h5>
+            </div>
+            <div class="i">
+              <input type="checkbox" id="option" />
+              <label for="option"
+                ><i class="fa fa-ellipsis-h white" aria-hidden="true"></i
+              ></label>
+            </div>
+            <div class="white time">4:44</div>
+          </div>
+        </div>
+        <!-- popular artist -->
+        <div class="heading white">Popular Artist</div>
+        <div class="row grow">
+          <div class="artist">
+            <a href="artist.html">
+              <img src="assets/images/ed_sheeran.jpg" alt="ed sheeran" />
+              <h3 class="white">Ed Sheeran</h3>
+            </a>
+          </div>
+          <div class="artist">
+            <a href="artist.html">
+              <img src="assets/images/charlie.jpg" alt="charlie puth" />
+              <h3 class="white">Charlie Puth</h3>
+            </a>
+          </div>
+          <div class="artist">
+            <a href="artist">
+              <img src="assets/images/coldplay.jpg" alt="coldplay" />
+              <h3 class="white">Coldplay</h3>
+            </a>
+          </div>
+          <div class="artist">
+            <a href="artist.html">
+              <img src="assets/images/zayn.jpg" alt="zayn" />
+              <h3 class="white">Zayn</h3>
+            </a>
+          </div>
+          <div class="artist">
+            <a href="artist.html">
+              <img
+                src="assets/images/imagine_dragon.jpg"
+                alt="imagine_dragon"
+              />
+              <h3 class="white">Imagine</h3>
+            </a>
+          </div>
+          <div class="artist">
+            <a href="artist.html">
+              <img src="assets/images/Shakira.jpg" alt="shakira" />
+              <h3 class="white">shakira</h3>
+            </a>
+          </div>
+        </div>
+        <div class="heading white">Music Stations</div>
+        <!-- channel -->
+        <div class="row card">
+          <div class="channel">
+            <img src="assets/images/music_channel1.jpg" alt="channel" />
+          </div>
+          <div class="channel">
+            <img src="assets/images/music channel2.jpg" alt="channel2" />
+          </div>
+          <div class="channel">
+            <img src="assets/images/music channel3.jpg" alt="channel3" />
+          </div>
+          <div class="channel">
+            <img src="assets/images/music channel4.jpg" alt="channel4" />
+          </div>
+        </div>
+        <!-- party -->
+        <div class="row space party">
+          <div><img src="assets/images/party.png" alt="party" /></div>
+          <div>
+            <img
+              src="assets/images/electronic-music.jpg"
+              alt="electronic-music"
+            />
+          </div>
+          <div><img src="assets/images/road trip.jpg" alt="" /></div>
+        </div>
+        <!-- Latest english -->
+        <div class="heading white">Latest English</div>
+        <div class="row english-artist">
+          <div><img src="assets/images/ed-sheeran.jpg" alt="ed sheeran" /></div>
+          <div>
+            <img src="assets/images/maroon5.jpg" alt="imagine_dragon" />
+          </div>
+          <div><img src="assets/images/ellie-goulding.jpg" alt="maroon" /></div>
+          <div><img src="assets/images/maroon.jpg" alt="shakira" /></div>
+        </div>
+        <!-- Latest hindi -->
+        <div class="heading white">Latest hindi</div>
+        <div class="row english-artist">
+          <div><img src="assets/images/ed-sheeran.jpg" alt="ed sheeran" /></div>
+          <div>
+            <img src="assets/images/maroon5.jpg" alt="imagine_dragon" />
+          </div>
+          <div><img src="assets/images/ellie-goulding.jpg" alt="maroon" /></div>
+          <div><img src="assets/images/maroon.jpg" alt="shakira" /></div>
+        </div>
+      </main>
+      <!-- side bar  -->
+      <aside>
+        <div class="queue">
+          <h3>Queue</h3>
+          <h5>
+            Queue
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </h5>
+        </div>
+        <ol>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/shape_of_you.jpg"
+                      alt="shape of you"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Shape Of You</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">ED Sheeran</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Witness.jpg"
+                      alt="witness"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Witness</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Katy Perry</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Skyfall.jpg"
+                      alt="skyfall"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Skyfall</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Adele</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/What_we_said.jpg"
+                      alt="what we said"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">What We Said</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Shakira</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Perfect_Illusion.jpg"
+                      alt="perfect Illusion"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Perfect Illusion</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Lady Gaga</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Sometimes.jpg"
+                      alt="sometimes"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Sometimes</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Ariana Grande</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Hold_up.jpg"
+                      alt="hold up"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Hold Up</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Beyoncé</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Sugar.jpg"
+                      alt="sugar"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Sugar</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Maroon 5</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Love_Yourself.jpg"
+                      alt="love yourself"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Love Yourself</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Justin Bieber</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Someone_like_you.jpg"
+                      alt="someone like you"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Someone Like You</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Adele</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Nightingale.jpg"
+                      alt="nightangle"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Nightingale</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Demi Lovato</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <label for="song-play">
+                    <img
+                      class="h_play"
+                      src="assets/images/Unfaithful.jpg"
+                      alt="unfaithful"
+                    />
+                    <img
+                      src="assets/images/Play_button.jpg"
+                      class="overlay"
+                      alt="play button"
+                    />
+                  </label>
+                </td>
+                <td class="s_name">Unfaithful</td>
+                <td rowspan="2">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="a_name">Rihanna</td>
+              </tr>
+            </table>
+          </li>
+        </ol>
+      </aside>
+    </div>
+  </body>
+</html>
