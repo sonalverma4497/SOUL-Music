@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  /* border: 1px solid black; */
+}
+section {
+  width: 68vw;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+aside {
+  height: 100%;
+}
+.details {
+  display: flex;
+  height: auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-bottom: 10px;
+}
+.disc {
+  line-height: 2;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+button {
+  padding: 20px;
+  background-color: rgb(9, 14, 77);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica
+  Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.button:hover {
+  transform: translateY(-1px);
+}
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+.small {
+  font-size: small;
+}
+.details > div {
+  margin: 10px 10px 0px 10px;
+}
+.artist_name {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.button {
+  margin-bottom: 10px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  width: 30vw;
+}
+.img img {
+  width: 25vw;
+}
+aside {
+  width: 30vw;
+}
+.queue {
+  display: flex;
+  justify-content: space-around;
+}
+
+table td {
+  width: 5%;
+}
+li {
+  text-align: center;
+}
+.fa-heart:hover {
+  color: Red;
+}
+
+.s_name {
+  font-weight: bolder;
+  font-size: large;
+  width: 120%;
+}
+.a_name {
+  font-size: small;
+  font-weight: bolder;
+  color: wheat;
+  font-style: italic;
+}
+td {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 10px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: auto;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 60%;
+  transition: 0.15s ease-in;
+}
+h5 {
+  color: var(--col1);
+}
+.fa-plus {
+  margin: 15px;
+}
+
+.fa-plus:hover {
+  color: red;
+}
+.list_name {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin:3px;
+}
