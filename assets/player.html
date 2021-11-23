@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{background-color: rgb(86, 5, 161);}
+    .dot {
+  height: 300px;
+  width: 300px;
+  background-color: #bbb;
+  border-radius: 70%;
+  border-top:5px solid white;
+  display: inline-block;
+  margin-left: 10vh;
+  margin-top: 10vh;
+  background-color: black;
+  animation: spin 5s linear infinite;
+}
+
+.header1{
+    width: 100%;
+    height: 20vh;
+    background-color: blueviolet;
+}
+#aud{
+    display: block;
+    margin-top: 5vh;
+    margin-left: 10vh;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.box1{
+    width: 20vh;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    float: right;
+}
+</style>
+<body>
+    <div class="header1"></div>
+    <span class="dot"></span>
+    <audio id="aud" controls
+preload="metadata" onloadedmetadata="mDur()" ontimeupdate="mPlay()">
+	<source src="http://calvarybucyrus.org/sermons/2016/2016-05-01-PM-Ken_Lance-Look_on_the_Fields.mp3" type="audio/mpeg">
+</audio><br><br>
+<div class="box1">
+    <h1>video</h1>
+</div>
+
+<script>
+var aud= document.getElementById('aud')
+var dur= document.getElementById('dur')
+function mDur(){dur.max= aud.duration}
+function mPlay(){dur.value=aud.currentTime}
+function mSet(){aud.currentTime=dur.value}
+</script>
+</body>
+</html>
